@@ -1,0 +1,94 @@
+{
+  "name": "@nkzw/create",
+  "version": "0.0.1",
+  "description": "Nakazawa Tech templates for Vite+.",
+  "license": "MIT",
+  "author": "Christoph Nakazawa <christoph.pojer@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkzw-tech/create.git"
+  },
+  "type": "module",
+  "bin": {
+    "create-nkzw": "./bin/create.mjs"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "vp": {
+    "templates": [
+      {
+        "name": "web",
+        "description": "Web app template with Vite, React, Tailwind, fbtee, Better Auth, and React Router.",
+        "template": "github:nkzw-tech/web-app-template",
+        "keywords": [
+          "app",
+          "better-auth",
+          "fbtee",
+          "react",
+          "tailwind",
+          "vite",
+          "web"
+        ]
+      },
+      {
+        "name": "expo",
+        "description": "React Native and Expo app template with Expo Router, Uniwind, fbtee, and Vite+.",
+        "template": "github:nkzw-tech/expo-app-template",
+        "keywords": [
+          "android",
+          "app",
+          "expo",
+          "fbtee",
+          "ios",
+          "mobile",
+          "react-native"
+        ]
+      },
+      {
+        "name": "server",
+        "description": "GraphQL server template with Prisma, Pothos, Hono, Better Auth, and GraphQL Yoga.",
+        "template": "github:nkzw-tech/server-template",
+        "keywords": [
+          "better-auth",
+          "graphql",
+          "hono",
+          "pothos",
+          "prisma",
+          "server"
+        ]
+      },
+      {
+        "name": "library",
+        "description": "TypeScript library template with Vite+ packaging and Nakazawa Tech defaults.",
+        "template": "github:nkzw-tech/library-template",
+        "keywords": [
+          "library",
+          "package",
+          "typescript",
+          "vite-plus"
+        ]
+      },
+      {
+        "name": "fate",
+        "description": "fate quick-start monorepo with React client, tRPC server, Prisma, and shared tooling.",
+        "template": "github:nkzw-tech/fate-template",
+        "keywords": [
+          "fate",
+          "monorepo",
+          "prisma",
+          "react",
+          "trpc"
+        ],
+        "monorepo": true
+      }
+    ]
+  }
+}
