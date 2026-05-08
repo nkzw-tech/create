@@ -1,6 +1,6 @@
 {
   "name": "@nkzw/create",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Nakazawa Tech templates for Vite+.",
   "license": "MIT",
   "author": "Christoph Nakazawa <christoph.pojer@gmail.com>",
@@ -8,7 +8,6 @@
     "type": "git",
     "url": "git+https://github.com/nkzw-tech/create.git"
   },
-  "type": "module",
   "bin": {
     "create-nkzw": "./bin/create.mjs"
   },
@@ -16,6 +15,7 @@
     "bin",
     "README.md"
   ],
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
@@ -43,12 +43,6 @@
         "name": "library",
         "description": "TypeScript library template with Vite+ packaging and Nakazawa Tech defaults.",
         "template": "github:nkzw-tech/library-template"
-      },
-      {
-        "name": "fate",
-        "description": "fate quick-start monorepo with React client, tRPC server, Prisma, and shared tooling.",
-        "template": "github:nkzw-tech/fate-template",
-        "monorepo": true
       }
     ]
   }
